@@ -1,0 +1,25 @@
+{
+  "name": "sitehound.us",
+  "version": "1.0.0",
+  "description": "Portfolio site for Freelance web development",
+  "main": "index.js",
+  "homepage": "https://f2hodge.github.io/sitehound.us",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f2hodge/sitehound.us.git"
+  },
+  "author": "SiteHound",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/f2hodge/sitehound.us/issues"
+  },
+  "homepage2": "https://github.com/f2hodge/sitehound.us#readme",
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "node-sass": "^9.0.0"
+  }
+}
