@@ -138,7 +138,7 @@ main {
 
 // ContactMe page styling
 .boxes {
-    // START OLD CODE
+    // START OLD CODE: Flexbox
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: space-evenly;
@@ -146,6 +146,49 @@ main {
     // margin-top: 1rem;
 
     // div {
+        // font-size: 2rem;
+        // border: 3px #fff solid;
+        // padding: 1.5rem 2.5rem;
+        // margin-bottom: 3rem;
+        // @include easeOut;
+
+        // &:hover {
+        //     padding: 0.5rem 1.5rem;
+        //     background: $secondary-color;
+        //     color: set-text-color($secondary-color);
+        //     span {
+        //         color: set-text-color($secondary-color);
+        //     }
+        // }
+    // }
+    // END OLD CODE
+
+    // START Styled like About 
+    // display: grid;
+    // grid-gap: 30px;
+    // grid-template-areas: 
+    // 'box1 box2'
+    // 'box3 box3'
+    // 'box4 box4';
+    // grid-template-columns: repeat(2, 1fr);
+    // margin-top: 1rem;
+
+    // .box-1 {
+    //     grid-area: box1;
+    // }
+    
+    // .box-2 {
+    //     grid-area: box2;
+    // }
+    
+    // .box-3 {
+    //     grid-area: box3;
+    // }
+    // .box-4 {
+    //     grid-area: box4;
+    // }
+    
+    // .box {
     //     font-size: 2rem;
     //     border: 3px #fff solid;
     //     padding: 1.5rem 2.5rem;
@@ -161,37 +204,20 @@ main {
     //         }
     //     }
     // }
-    // END OLD CODE
+    // END About-style styling
 
+    // START Work-style styling
     display: grid;
-    grid-gap: 30px;
-    grid-template-areas: 
-    'box1 box2'
-    'box3 box3'
-    'box4 box4';
+    grid-gap: 0.7rem;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1rem;
 
-    .box-1 {
-        grid-area: box1;
-    }
-    
-    .box-2 {
-        grid-area: box2;
-    }
-    
-    .box-3 {
-        grid-area: box3;
-    }
-    .box-4 {
-        grid-area: box4;
-    }
-    
-    div {
-        font-size: 2rem;
+    .box {
+        width: 100%;
         border: 3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
+        font-size: 2rem; //Keep out
+        padding: 1.5rem 2.5rem; //keep out
+        margin-bottom: 3rem; //keep out
         @include easeOut;
 
         &:hover {
@@ -203,6 +229,7 @@ main {
             }
         }
     }
+    // END Work-style styling
 }
 
 // Button styling
